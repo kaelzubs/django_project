@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<p class="success" style="background-color: rgba(0, 128, 0, 0.15); padding: 10px; text-align: center; color: green; border: 1px solid green; border-radius: 3px;">Your message was submitted successfully. Thank you.</p>
+
+<a href="{% url 'list_home' %}" style="text-decoration: none">
+    <p class="success" style="background-color: rgba(0, 128, 0, 0.15); padding: 10px; text-align: center; color: green; border: 1px solid green; border-radius: 3px;">Return To Home</p>
+</a>
+{% endblock content %}

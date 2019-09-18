@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+{% for page in ppages %}
+<p style="font-weight:bold; color: snow; text-align: center; border: 1px solid goldenrod; background-color:rgb(22, 163, 85); padding: 8px; border-radius: 5px">{{ page.created }}</p><hr>
+<div class="table-responsive">
+    {% autoescape off %}
+    {{ page.bodytext }}
+    {% endautoescape %}
+</div><hr>
+{% endfor %}
+
+
+
+
+
+<button class="container btn btn-success h-100" style="border: 1px solid goldenrod">
+    <span class="step-links">
+        {% if ppages.has_previous %}
+        <a href="?page=1" style="color:rgb(20, 1, 1); font-weight:bold; font-size: 130%">&laquo; first</a>
+        <a href="?page={{ ppages.previous_page_number }}" style="color: snow; font-size: 130%">previous</a>
+        {% endif %}
+
+        <span class="current" style="font-size: 18px; color:rgb(160, 212, 247); font-weight: bolder;">
+            Page {{ ppages.number }} of {{ ppages.paginator.num_pages }}.
+        </span>
+
+        {% if ppages.has_next %}
+        <a href="?page={{ ppages.next_page_number }}" style="color: snow; font-size: 130%">next</a>
+        <a href="?page={{ ppages.paginator.num_pages }}" style="color:rgb(20, 1, 1); font-weight: bold; font-size: 130%">last &raquo;</a>
+        {% endif %}
+    </span>
+</button>
+{% endblock content %}

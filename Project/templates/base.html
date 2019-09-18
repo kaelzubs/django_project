@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta name="description" content="Excellent Prediction Zone is the home of accurate and reliable soccer tipsters. we offer free tips in all our platform. just login and have unlimited access to our listed odds"/>
+
+        <title>Excellent Prediction Zone, Best soccer predictions, Best soccer tips, and Best accurate tips, Best accurate predictions</title>
+
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=yes">-->
+
+        <meta name="viewport" content ="width=device-width, height=device-height, initial-scale=0.86" />
+
+        <meta charset="utf-8" />
+
+        <link href="{% static 'main.css' %}" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="{% static 'soccer.png' %}" />
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4886094921400515",
+            enable_page_level_ads: true
+
+        });
+        </script>
+
+
+        <script>
+        $('#carouselExampleIndicators').carousel({
+            interval: 3000
+
+        })
+        </script>
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144176874-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144176874-1', { 'optimize_id': 'GTM-PJSXPSX'});
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N4B6L5N');</script>
+        <!-- End Google Tag Manager -->
+
+
+    </head>
+
+    <body class='jumbotron jumbotron-fluid' style="positon: relative; background-image: url('{% static 'giphy_2.gif' %}'); background-size: contain; width: auto; font-family: gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 0.9em; text-align: justify; color: #474747;">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4B6L5N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class='container col-md-9'>
+            <div class='row'>
+                <div style=" background-color: rgb(9, 44, 9); font-family: Arial, Helvetica, sans-serif; margin: auto;">
+                    <header id="header" style="border-style: none; width: auto; height: auto;">
+                        <div class='col' style="text-align: center; border: 1px solid rgb(90, 87, 87); background-color: rgb(9, 44, 9); color: snow; font-size: 100%; font-weight: bold; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                          {% if user.is_authenticated %}
+                          Hello, {{ user.username }}. <a href="{% url 'account_logout' %}" style="font-weight: bold; text-decoration: none; font-size: 130%; color: rgb(160, 212, 247);">Log out</a>
+                          {% else %}
+                          Not logged in. <a href="{% url 'account_login' %}" style="font-weight: bold; text-decoration: none; font-size: 130%; color: rgb(4, 250, 78);">Log in</a>
+                          {% endif %}
+                        </div>
+                        <div class="col" style="text-align: center; background-color: goldenrod; color:rgb(12, 11, 11); font-weight: bolder; padding: 15px; border: 1px solid black">
+                            <h1 style="margin-bottom:inherit; margin-top: auto; font-weight: bold; font-size: 250%">EXCELLENT PREDICTION ZONE</h1>
+                        </div>
+
+                    </header>
+
+                    <p class='col' style="text-align: center; margin-bottom: auto; margin-top: auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: snow;  font-weight:500; font-size: 90%;">The only sure thing about luck is that it will change.</p>
+
+
+
+                    <div id="carouselExampleIndicators" class="carousel slide col" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        </ol>
+
+                        <div class="carousel-inner" style='border-radius: 3px;'>
+                            <div class="carousel-item active">
+                                <img src="{% static 'base1.jpg' %}" class="d-block w-100 " alt="World cup">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'champ.jpg' %}" class="d-block w-100 " alt="Champions League">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="{% static 'aguero_.jpg' %}" class="d-block w-100 " alt='aguero'>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="{% static 'messi.jpg' %}" class="d-block w-100 " alt='messi'>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'neymar_.jpg' %}" class="d-block w-100 img-responsive" alt='neymar'>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'Cr7c.jpg' %}" class="d-block w-100 img-responsive" alt='Cr7'>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="{% static 'salah_.jpg' %}" class="d-block w-100 img-responsive" alt='salah'>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row" style="border: none; cursor: pointer; text-align: center; margin: 1px;  background-color: rgb(9, 44, 9);">
+                        <div class="col" style=" padding: 5px; cursor: pointer; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_home" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">Home</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_three" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">3 ODD</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_five" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">5 ODD</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_ten" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">10 ODD</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_disclaim" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">Disclaimer</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 3px">
+                            <a href='{% url "list_about" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">About Us</a>
+                        </div>
+
+                        <div class="col" style="border: none; cursor: pointer; padding: 5px; background-color: rgb(9, 44, 9); border: 2px solid green; border-radius: 2px">
+                            <a href='{% url "list_contact" %}' style="text-decoration: none; color: snow; font-weight: bold; font-size: 100%;">Contact Us</a>
+                        </div>
+                    </div>
+
+
+                    <div class='col' style=" padding: 10px; border-radius: 3px; border: 1px solid darkgoldenrod; background-color: snow; display: inline-block;">
+                        {% block content %}
+                        <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Welcome!</h1>
+                        <p style="font-family:cursive">This is the site template</p>
+                        {% endblock content %}<hr>
+                        <table class='table table-sm table-dark table-responsive{-sm|-md|-lg|-xl} ' style="width: 100%; text-align: center;">
+                            <tr>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+                                <th style="background-color: rgb(10, 71, 20); color: snow; font-weight: bold; font-size: 19px;">*******</th>
+
+                            </tr>
+                            <tr>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px; color:green;">EPZ</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                                <td style="border: thin solid rgb(155, 137, 34); font-family: monospace; font-weight: bold; font-size: 18px;">*******</td>
+                            </tr>
+
+                        </table><hr>
+                    </div>
+
+                    <div>
+                        <footer id="footer" style="text-align: center; font-size: 90%; padding: 30px; background-color: goldenrod; border-top: thin solid brown; clear: both; color:snow;">Copyright &copy; 2019 epredictz.com. All rights reserved.</footer>
+                    </div>
+
+                    <div style='color: snow; background: brown; text-align: center; font-size: 80%;' itemscope itemtype="http://schema.org/Person">
+
+                        <span itemprop="company">Excellent Prediction Zone is the home of accurate and reliable soccer/football  tipsters</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d35f64ddd56fe18"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
