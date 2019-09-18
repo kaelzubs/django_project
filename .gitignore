@@ -1,0 +1,6 @@
+db.sqlite3
+*.pyc
+*.python3
+.gitsecret/keys/random_seed
+!*.secret
+secret_file.txt

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% for page in pages %}
+<div class='col'>
+    {% autoescape off %}
+    {{ page.bodytext }}
+    {% endautoescape %}
+</div><hr>
+{% endfor %}
+{% endblock content %}
+
