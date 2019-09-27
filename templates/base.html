@@ -1,5 +1,7 @@
-{% load staticfiles %}
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
+{% load static %}
+
 <html>
     <head lang="en">
 
@@ -20,11 +22,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-4886094921400515",
             enable_page_level_ads: true
-
         });
         </script>
 
@@ -32,14 +34,12 @@
         <script>
         $('#carouselExampleIndicators').carousel({
             interval: 3000
-
         })
         </script>
 
-
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144176874-1"></script>
+
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -49,20 +49,29 @@
         </script>
 
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-N4B6L5N');</script>
+        <script>
+        (function(w,d,s,l,i){
+            w[l] = w[l]||[];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l!='dataLayer'?'&l=' + l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id=' + i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N4B6L5N');
+        </script>
         <!-- End Google Tag Manager -->
-
-
     </head>
 
     <body class='jumbotron jumbotron-fluid' style="background-image: url('{% static 'giphy_2.gif' %}'); background-size: contain; width: auto; font-family: gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 100%; text-align: justify; color: #474747;">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4B6L5N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class='container col-md-9'>
+        <div class='container-fluid col-md-9'>
             <div class='row'>
                 <div style=" background-color: rgb(9, 44, 9); font-family: Arial, Helvetica, sans-serif; margin: auto;">
                     <header id="header" style="border-style: none; width: auto; height: auto;">
@@ -76,7 +85,6 @@
                         <div class="col" style="text-align: center; background-color: goldenrod; color:rgb(12, 11, 11); font-weight: bolder; padding: 15px; border: 1px solid black">
                             <h1 style="margin-bottom:inherit; margin-top: auto; font-weight: bold; font-size: 250%">EXCELLENT PREDICTION ZONE</h1>
                         </div>
-
                     </header>
 
                     <p class='col' style="text-align: center; margin-bottom: auto; margin-top: auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: snow;  font-weight:500; font-size: 90%;">The only sure thing about luck is that it will change.</p>
@@ -201,8 +209,8 @@
                         <footer id="footer" style="text-align: center; font-size: 90%; padding: 30px; background-color: goldenrod; border-top: thin solid brown; clear: both; color:snow;">Copyright &copy; 2019 epredictz.com. All rights reserved.</footer>
                     </div>
 
-                    <div style='color: snow; background: brown; text-align: center; font-size: 80%;' itemscope itemtype="http://schema.org/Person">
-
+                    <div style='color: snow; background: brown; text-align: center; font-size: 80%;'>
+                        <!--<span itemscope itemtype="http://schema.org/Person">kaelzubs@epredictz.com</span>-->
                         <span itemprop="company">Excellent Prediction Zone is the home of accurate and reliable soccer/football  tipsters</span>
 
                     </div>

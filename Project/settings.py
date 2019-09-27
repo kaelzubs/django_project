@@ -145,10 +145,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/kaelzubs/django_project/Project/static'
 
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, 'static' ),
-#]
-
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'kaelzubs'
