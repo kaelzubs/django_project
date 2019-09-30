@@ -5,3 +5,4 @@ db.sqlite3
 !*.secret
 secret_file.txt
 *.htaccess
+Project/settings
