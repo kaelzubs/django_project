@@ -1,1 +1,4 @@
-
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !AUTH_KEY
+RewriteCond %{REQUEST_URI} ^/home/kaelzubs/django_project$
+RewriteRule . - [F]
