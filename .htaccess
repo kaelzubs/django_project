@@ -1,1 +1,4 @@
 Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^epredictz\.com [NC]
+RewriteRule ^(.*)$ http://www.epredictz.com/$1 [L,R=301,NC]

@@ -37,7 +37,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = proj1_views.handler404
 handler500 = proj1_views.handler500
