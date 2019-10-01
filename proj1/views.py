@@ -6,7 +6,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib import sitemaps
 from django.urls import reverse
 
-
 # Create your views here.
 
 def list_home(request):
@@ -36,14 +35,12 @@ class StaticViewSitemap(sitemaps.Sitemap):
         return reverse(item)
 
 
-def error_404(request, data):
-    data = {}
-    return render(request,'error_404.html', data)
-
-def error_500(request):
-    return render(request,'error_500.html')
+def handler404(request, exception):
+    return render(request, 'error_404.html', status=404)
 
 
+def handler500(request):
+    return render(request, 'error_500.html', status=500)
 
 
 def create_home(request):

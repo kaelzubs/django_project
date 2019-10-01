@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+
 from proj1 import views as proj1_views
+
 from django.conf.urls import handler404, handler500
+
 
 urlpatterns = [
 
@@ -36,5 +39,5 @@ urlpatterns = [
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-handler404 = proj1_views.error_404
-handler500 = proj1_views.error_500
+handler404 = proj1_views.handler404
+handler500 = proj1_views.handler500
