@@ -162,6 +162,13 @@ STATICFILES_DIRS = [
 ]
 
 
+STATICFILES_FINDERS = (
+	'django.contrib.staticfiles.finders.FileSystemFinder',
+	'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+	#'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'kaelzubs'
 EMAIL_HOST_PASSWORD = ''
