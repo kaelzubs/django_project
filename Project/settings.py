@@ -25,15 +25,17 @@ SECRET_KEY = 'i=nz9&jpols)avci1pr(_cgc9e33u=z#det1_onsofh_%6o5l('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-if DEBUG is False:
-    ALLOWED_HOSTS = [
-        '127.0.0.1:8000',
-        '*',
-        'localhost',
-    ]
+ALLOWED_HOSTS = ['*']
 
-if DEBUG is True:
-    ALLOWED_HOSTS = []
+#if DEBUG is False:
+ #   ALLOWED_HOSTS = [
+  #      '127.0.0.1:8000',
+   #     '*',
+    #    'localhost',
+    #]
+
+#if DEBUG is True:
+ #   ALLOWED_HOSTS = []
 
 # Application definition
 
